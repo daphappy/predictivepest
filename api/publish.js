@@ -181,9 +181,8 @@ function renderBlocks(blocks) {
 
       case 'cta':
         return `<div class="art-cta">
-  <div class="cta-eyebrow">The operational platform</div>
-  <div class="cta-h">ZoneIQ makes this actionable.</div>
-  <p class="cta-sub">260+ species. 3,143 counties modeled individually. Push window alerts delivered to your branch dashboard every morning.</p>
+  <div class="cta-h">ZoneIQ: Predictive Pest Management (PPM)</div>
+  <p class="cta-sub">The intelligence layer the pest management industry has been missing.</p>
   <a href="https://zoneiq.co" target="_blank" rel="noopener" class="cta-link">Explore ZoneIQ at zoneiq.co \u2192</a>
 </div>`;
 
