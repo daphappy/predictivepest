@@ -222,7 +222,7 @@ function buildArticleHTML({ title, slug, blocks, excerpt, tag, date, dateISO }) 
 {"@context":"https://schema.org","@type":"Article","headline":"${safeTitle}","description":"${safeExcerpt}","datePublished":"${dateISO}","author":{"@type":"Organization","name":"PredictivePest"},"publisher":{"@type":"Organization","name":"PredictivePest","url":"https://predictivepest.com"}}
 <\/script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--white:#fff;--off:#f8f7f5;--paper:#f2f0ec;--rule:#dedad3;--mid:#b0aba1;--muted:#7a7670;--body:#2e2c28;--ink:#141210;--moss:#2d4a35;--sage:#4e7a58;--sage-lt:#a8c4ac;--amber:#b5622a;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -260,9 +260,9 @@ h1.art-title em{font-style:italic;color:var(--sage)}
 .pdf-body{flex:1}.pdf-title{font-size:14px;color:var(--ink);font-weight:400;margin-bottom:2px}.pdf-desc{font-size:12px;color:var(--muted)}
 .pdf-dl{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--sage);text-decoration:none;letter-spacing:.04em;flex-shrink:0;white-space:nowrap}.pdf-dl:hover{color:var(--moss)}
 .art-cta{background:var(--moss);padding:20px 28px;border-radius:4px;margin:44px 0}
-.cta-h{font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;letter-spacing:.5px;color:var(--off);margin-bottom:6px}
+.cta-h{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:22px;letter-spacing:.05em;color:var(--off);margin-bottom:6px}
 .cta-zone{color:var(--off)}.cta-iq{color:#0ea5e9}.cta-rest{color:var(--off)}
-.cta-sub{font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:var(--sage-lt);font-weight:300;margin-bottom:14px;line-height:1.5}
+.art-cta .cta-sub{font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#a8c4ac !important;font-weight:300;margin-bottom:12px;line-height:1.4}
 .cta-link{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--sage-lt);text-decoration:none;letter-spacing:.06em;border-bottom:1px solid var(--sage);padding-bottom:2px;display:inline-block}.cta-link:hover{color:var(--off)}
 .art-divider{border:none;border-top:1px solid var(--rule);margin:36px 0}
 footer{border-top:1px solid var(--rule);padding:28px 56px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:80px}
