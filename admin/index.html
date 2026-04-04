@@ -402,7 +402,7 @@ function renderBlockCard(b) {
 <div><span class="block-mini-label">Description (optional)</span><input type="text" class="block-input" placeholder="What this document covers" value="${esc(b.description||'')}" oninput="updateBlock(${b.id},'description',this.value)"/></div>`;
       break;
     case 'cta':
-      body = `<div class="cta-preview-block"><strong>ZoneIQ makes this actionable.</strong>260+ species. 3,143 counties modeled individually. Push window alerts delivered to your branch dashboard every morning. <em style="opacity:.7;font-size:11px">— This block links to zoneiq.co</em></div>`;
+      body = `<div class="cta-preview-block"><strong>ZoneIQ: Predictive Pest Management (PPM)</strong>The intelligence layer the pest management industry has been missing. <em style="opacity:.7;font-size:11px">— This block links to zoneiq.co</em></div>`;
       break;
     case 'divider':
       body = `<hr class="divider-preview"/>`;
@@ -516,7 +516,7 @@ function previewBlock(b) {
     case 'table': { const hds=(b.headers||[]).map(h=>`<th>${esc(h)}</th>`).join(''); const rws=(b.rows||[]).map(r=>`<tr>${(r||[]).map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join(''); return `<div class="art-table-wrap"><table class="art-table"><thead><tr>${hds}</tr></thead><tbody>${rws}</tbody></table></div>`; }
     case 'citation': return `<div class="art-citation"><span class="cit-label">Source</span><a href="${esc(b.url)}" class="cit-link">${esc(b.text)}</a>${b.description?`<span class="cit-desc"> — ${esc(b.description)}</span>`:''}</div>`;
     case 'pdf': return `<div class="art-pdf"><span class="pdf-icon">PDF</span><div class="pdf-body"><div class="pdf-title">${esc(b.title)}</div>${b.description?`<div class="pdf-desc">${esc(b.description)}</div>`:''}</div><a href="${esc(b.url)}" class="pdf-dl">Download &rarr;</a></div>`;
-    case 'cta': return `<div class="art-cta"><div class="cta-eyebrow">The operational platform</div><div class="cta-h">ZoneIQ makes this actionable.</div><p class="cta-sub">260+ species. 3,143 counties modeled individually. Push window alerts delivered every morning.</p><a href="https://zoneiq.co" class="cta-link">Explore ZoneIQ at zoneiq.co &rarr;</a></div>`;
+    case 'cta': return `<div class="art-cta"><div class="cta-h">ZoneIQ: Predictive Pest Management (PPM)</div><p class="cta-sub">The intelligence layer the pest management industry has been missing.</p><a href="https://zoneiq.co" class="cta-link">Explore ZoneIQ at zoneiq.co &rarr;</a></div>`;
     case 'divider': return `<hr class="art-divider"/>`;
     default: return '';
   }
